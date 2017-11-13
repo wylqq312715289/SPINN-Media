@@ -1,0 +1,208 @@
+Using TensorFlow backend.
+2017-10-25 15:19:19.291114: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 15:19:19.291178: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 15:19:19.291185: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 15:19:19.291190: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 15:19:19.291195: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 15:19:25.656788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:04:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+2017-10-25 15:19:25.656854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-10-25 15:19:25.656865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-10-25 15:19:25.656883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:04:00.0)
+('readH5 Feature.shape=', (91192, 64, 64))
+('readH5 Feature.shape=', (91192, 64, 64))
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249972,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18000, train nag num = 72002
+vali pos num = 4498, vali nag num = 17994
+Remove file ./cache/models/cnn_model_1.h5.
+Train on 90002 samples, validate on 22492 samples
+Epoch 1/5
+211s - loss: 0.0749 - acc: 0.9757 - val_loss: 0.0652 - val_acc: 0.9738
+Epoch 2/5
+200s - loss: 0.0339 - acc: 0.9903 - val_loss: 0.0585 - val_acc: 0.9787
+Epoch 3/5
+200s - loss: 0.0219 - acc: 0.9942 - val_loss: 0.0753 - val_acc: 0.9741
+Epoch 4/5
+200s - loss: 0.0158 - acc: 0.9965 - val_loss: 0.0692 - val_acc: 0.9751
+Epoch 5/5
+200s - loss: 0.0116 - acc: 0.9975 - val_loss: 0.0812 - val_acc: 0.9746
+confusion matrix: 
+[[17880   114]
+ [  458  4040]]
+accuracy score:  0.97456873555
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.98      0.99      0.98     17994
+          1       0.97      0.90      0.93      4498
+
+avg / total       0.97      0.97      0.97     22492
+
+F1 score:  0.933888118354
+recall:  0.898176967541
+False positive rate:  0.00633544514838
+********************  1 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249972,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18003, train nag num = 72014
+vali pos num = 4495, vali nag num = 17982
+Remove file ./cache/models/cnn_model_2.h5.
+Train on 90017 samples, validate on 22477 samples
+Epoch 1/5
+201s - loss: 0.0807 - acc: 0.9720 - val_loss: 0.0840 - val_acc: 0.9690
+Epoch 2/5
+199s - loss: 0.0459 - acc: 0.9837 - val_loss: 0.0747 - val_acc: 0.9725
+Epoch 3/5
+198s - loss: 0.0323 - acc: 0.9901 - val_loss: 0.0845 - val_acc: 0.9713
+Epoch 4/5
+199s - loss: 0.0258 - acc: 0.9929 - val_loss: 0.0860 - val_acc: 0.9743
+Epoch 5/5
+199s - loss: 0.0201 - acc: 0.9953 - val_loss: 0.0923 - val_acc: 0.9721
+confusion matrix: 
+[[17882   100]
+ [  526  3969]]
+accuracy score:  0.972149308182
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.97      0.99      0.98     17982
+          1       0.98      0.88      0.93      4495
+
+avg / total       0.97      0.97      0.97     22477
+
+F1 score:  0.926903316207
+recall:  0.8829810901
+False positive rate:  0.00556111667223
+********************  2 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.250000,pos_nag_rato=0.250000
+begin to over_sampling ......
+end over_sampling, pos/nag=0.250000,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 17998, train nag num = 71992
+vali pos num = 4501, vali nag num = 18004
+Remove file ./cache/models/cnn_model_3.h5.
+Train on 89990 samples, validate on 22505 samples
+Epoch 1/5
+200s - loss: 0.0957 - acc: 0.9634 - val_loss: 0.0570 - val_acc: 0.9790
+Epoch 2/5
+199s - loss: 0.0562 - acc: 0.9782 - val_loss: 0.0517 - val_acc: 0.9820
+Epoch 3/5
+197s - loss: 0.0514 - acc: 0.9805 - val_loss: 0.0465 - val_acc: 0.9841
+Epoch 4/5
+197s - loss: 0.0472 - acc: 0.9824 - val_loss: 0.0471 - val_acc: 0.9829
+Epoch 5/5
+197s - loss: 0.0443 - acc: 0.9834 - val_loss: 0.0415 - val_acc: 0.9867
+confusion matrix: 
+[[17819   185]
+ [  115  4386]]
+accuracy score:  0.986669628971
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.99      0.99      0.99     18004
+          1       0.96      0.97      0.97      4501
+
+avg / total       0.99      0.99      0.99     22505
+
+F1 score:  0.966931216931
+recall:  0.974450122195
+False positive rate:  0.0102754943346
+********************  3 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249972,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 17993, train nag num = 71974
+vali pos num = 4505, vali nag num = 18022
+Remove file ./cache/models/cnn_model_4.h5.
+Train on 89967 samples, validate on 22527 samples
+Epoch 1/5
+202s - loss: 0.0791 - acc: 0.9717 - val_loss: 0.0470 - val_acc: 0.9848
+Epoch 2/5
+199s - loss: 0.0420 - acc: 0.9865 - val_loss: 0.0473 - val_acc: 0.9802
+Epoch 3/5
+199s - loss: 0.0291 - acc: 0.9919 - val_loss: 0.0657 - val_acc: 0.9754
+Epoch 4/5
+198s - loss: 0.0220 - acc: 0.9945 - val_loss: 0.0732 - val_acc: 0.9759
+Epoch 5/5
+197s - loss: 0.0163 - acc: 0.9962 - val_loss: 0.0681 - val_acc: 0.9791
+confusion matrix: 
+[[17926    96]
+ [  375  4130]]
+accuracy score:  0.979091756559
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.98      0.99      0.99     18022
+          1       0.98      0.92      0.95      4505
+
+avg / total       0.98      0.98      0.98     22527
+
+F1 score:  0.946054289314
+recall:  0.916759156493
+False positive rate:  0.00532682277217
+********************  4 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249972,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18000, train nag num = 72002
+vali pos num = 4498, vali nag num = 17994
+Remove file ./cache/models/cnn_model_5.h5.
+Train on 90002 samples, validate on 22492 samples
+Epoch 1/5
+195s - loss: 0.5844 - acc: 0.9647 - val_loss: 0.5730 - val_acc: 0.9766
+Epoch 2/5
+195s - loss: 0.5612 - acc: 0.9797 - val_loss: 0.5584 - val_acc: 0.9787
+Epoch 3/5
+195s - loss: 0.5448 - acc: 0.9819 - val_loss: 0.5444 - val_acc: 0.9804
+Epoch 4/5
+195s - loss: 0.5300 - acc: 0.9836 - val_loss: 0.5310 - val_acc: 0.9785
+Epoch 5/5
+195s - loss: 0.5166 - acc: 0.9843 - val_loss: 0.5187 - val_acc: 0.9800
+confusion matrix: 
+[[17729   265]
+ [  184  4314]]
+accuracy score:  0.980037346612
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.99      0.99      0.99     17994
+          1       0.94      0.96      0.95      4498
+
+avg / total       0.98      0.98      0.98     22492
+
+F1 score:  0.950534317506
+recall:  0.959092930191
+False positive rate:  0.014727131266
+********************  5 fold end  ********************
+./cache/evaluate.csv had saved. Please download it.
+confusion matrix: 
+[[89236   760]
+ [ 1658 20839]]
+accuracy score:  0.97850532922
+classification report:
+             precision    recall  f1-score   support
+
+          0       0.98      0.99      0.99     89996
+          1       0.96      0.93      0.95     22497
+
+avg / total       0.98      0.98      0.98    112493
+
+F1 score:  0.94516509434
+recall:  0.926301284616
+False positive rate:  0.00844481976977

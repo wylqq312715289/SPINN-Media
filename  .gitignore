@@ -1,0 +1,7 @@
+*.pyc
+*.zip
+cache/*
+model/*
+logs/*
+*.json
+*.csv

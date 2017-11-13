@@ -1,0 +1,507 @@
+Using TensorFlow backend.
+2017-10-25 18:20:07.586324: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 18:20:07.586389: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 18:20:07.586398: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 18:20:07.586404: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 18:20:07.586410: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-10-25 18:20:13.841695: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:05:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+2017-10-25 18:20:13.841756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-10-25 18:20:13.841764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-10-25 18:20:13.841778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:05:00.0)
+('readH5 Feature.shape=', (91192, 64, 64))
+('readH5 Feature.shape=', (91192, 64, 64))
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18000, train nag num = 72002
+vali pos num = 245, vali nag num = 17994
+Remove file ./cache/models/cnn_model_1.h5.
+Train on 90002 samples, validate on 18239 samples
+Epoch 1/50
+55s - loss: 0.1144 - acc: 0.9558 - val_loss: 0.0395 - val_acc: 0.9821
+Epoch 2/50
+46s - loss: 0.0644 - acc: 0.9748 - val_loss: 0.0365 - val_acc: 0.9860
+Epoch 3/50
+46s - loss: 0.0507 - acc: 0.9805 - val_loss: 0.0298 - val_acc: 0.9891
+Epoch 4/50
+45s - loss: 0.0416 - acc: 0.9851 - val_loss: 0.0247 - val_acc: 0.9905
+Epoch 5/50
+45s - loss: 0.0347 - acc: 0.9884 - val_loss: 0.0234 - val_acc: 0.9903
+Epoch 6/50
+45s - loss: 0.0295 - acc: 0.9903 - val_loss: 0.0205 - val_acc: 0.9919
+Epoch 7/50
+45s - loss: 0.0248 - acc: 0.9922 - val_loss: 0.0181 - val_acc: 0.9932
+Epoch 8/50
+45s - loss: 0.0221 - acc: 0.9931 - val_loss: 0.0156 - val_acc: 0.9946
+Epoch 9/50
+45s - loss: 0.0187 - acc: 0.9940 - val_loss: 0.0136 - val_acc: 0.9946
+Epoch 10/50
+45s - loss: 0.0174 - acc: 0.9948 - val_loss: 0.0152 - val_acc: 0.9947
+Epoch 11/50
+45s - loss: 0.0153 - acc: 0.9957 - val_loss: 0.0123 - val_acc: 0.9957
+Epoch 12/50
+43s - loss: 0.0142 - acc: 0.9961 - val_loss: 0.0144 - val_acc: 0.9951
+Epoch 13/50
+43s - loss: 0.0129 - acc: 0.9959 - val_loss: 0.0131 - val_acc: 0.9955
+Epoch 14/50
+44s - loss: 0.0112 - acc: 0.9969 - val_loss: 0.0128 - val_acc: 0.9958
+Epoch 15/50
+44s - loss: 0.0111 - acc: 0.9969 - val_loss: 0.0128 - val_acc: 0.9956
+Epoch 16/50
+44s - loss: 0.0101 - acc: 0.9970 - val_loss: 0.0116 - val_acc: 0.9962
+Epoch 17/50
+44s - loss: 0.0087 - acc: 0.9976 - val_loss: 0.0120 - val_acc: 0.9964
+Epoch 18/50
+43s - loss: 0.0085 - acc: 0.9976 - val_loss: 0.0128 - val_acc: 0.9966
+Epoch 19/50
+43s - loss: 0.0081 - acc: 0.9976 - val_loss: 0.0112 - val_acc: 0.9965
+Epoch 20/50
+44s - loss: 0.0071 - acc: 0.9981 - val_loss: 0.0123 - val_acc: 0.9967
+Epoch 21/50
+43s - loss: 0.0069 - acc: 0.9981 - val_loss: 0.0119 - val_acc: 0.9967
+Epoch 22/50
+43s - loss: 0.0063 - acc: 0.9982 - val_loss: 0.0119 - val_acc: 0.9968
+Epoch 23/50
+44s - loss: 0.0060 - acc: 0.9984 - val_loss: 0.0117 - val_acc: 0.9968
+Epoch 24/50
+44s - loss: 0.0052 - acc: 0.9985 - val_loss: 0.0135 - val_acc: 0.9965
+Epoch 25/50
+44s - loss: 0.0057 - acc: 0.9984 - val_loss: 0.0130 - val_acc: 0.9970
+Epoch 26/50
+44s - loss: 0.0046 - acc: 0.9988 - val_loss: 0.0158 - val_acc: 0.9968
+Epoch 27/50
+44s - loss: 0.0046 - acc: 0.9988 - val_loss: 0.0130 - val_acc: 0.9970
+Epoch 28/50
+44s - loss: 0.0046 - acc: 0.9986 - val_loss: 0.0131 - val_acc: 0.9974
+Epoch 29/50
+44s - loss: 0.0046 - acc: 0.9988 - val_loss: 0.0150 - val_acc: 0.9970
+Epoch 30/50
+44s - loss: 0.0038 - acc: 0.9991 - val_loss: 0.0140 - val_acc: 0.9970
+Epoch 31/50
+43s - loss: 0.0032 - acc: 0.9992 - val_loss: 0.0146 - val_acc: 0.9970
+Epoch 32/50
+44s - loss: 0.0030 - acc: 0.9993 - val_loss: 0.0156 - val_acc: 0.9970
+Epoch 33/50
+43s - loss: 0.0032 - acc: 0.9992 - val_loss: 0.0142 - val_acc: 0.9972
+Epoch 34/50
+44s - loss: 0.0030 - acc: 0.9993 - val_loss: 0.0155 - val_acc: 0.9973
+Epoch 00033: early stopping
+confusion matrix: 
+[[17965    29]
+ [   21   224]]
+accuracy score:  0.997258621635
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     17994
+          1       0.89      0.91      0.90       245
+
+avg / total       1.00      1.00      1.00     18239
+
+F1 score:  0.899598393574
+recall:  0.914285714286
+False positive rate:  0.00161164832722
+********************  1 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18003, train nag num = 72014
+vali pos num = 257, vali nag num = 17982
+Remove file ./cache/models/cnn_model_2.h5.
+Train on 90017 samples, validate on 18239 samples
+Epoch 1/50
+45s - loss: 0.1183 - acc: 0.9567 - val_loss: 0.0326 - val_acc: 0.9886
+Epoch 2/50
+44s - loss: 0.0645 - acc: 0.9760 - val_loss: 0.0280 - val_acc: 0.9892
+Epoch 3/50
+44s - loss: 0.0526 - acc: 0.9803 - val_loss: 0.0258 - val_acc: 0.9899
+Epoch 4/50
+44s - loss: 0.0464 - acc: 0.9827 - val_loss: 0.0340 - val_acc: 0.9863
+Epoch 5/50
+44s - loss: 0.0411 - acc: 0.9852 - val_loss: 0.0315 - val_acc: 0.9868
+Epoch 6/50
+44s - loss: 0.0360 - acc: 0.9873 - val_loss: 0.0260 - val_acc: 0.9904
+Epoch 7/50
+45s - loss: 0.0307 - acc: 0.9894 - val_loss: 0.0182 - val_acc: 0.9942
+Epoch 8/50
+44s - loss: 0.0269 - acc: 0.9914 - val_loss: 0.0162 - val_acc: 0.9950
+Epoch 9/50
+44s - loss: 0.0235 - acc: 0.9924 - val_loss: 0.0188 - val_acc: 0.9938
+Epoch 10/50
+45s - loss: 0.0202 - acc: 0.9938 - val_loss: 0.0136 - val_acc: 0.9967
+Epoch 11/50
+44s - loss: 0.0175 - acc: 0.9945 - val_loss: 0.0147 - val_acc: 0.9960
+Epoch 12/50
+44s - loss: 0.0154 - acc: 0.9957 - val_loss: 0.0143 - val_acc: 0.9962
+Epoch 13/50
+44s - loss: 0.0141 - acc: 0.9958 - val_loss: 0.0148 - val_acc: 0.9968
+Epoch 14/50
+44s - loss: 0.0125 - acc: 0.9962 - val_loss: 0.0150 - val_acc: 0.9961
+Epoch 15/50
+43s - loss: 0.0124 - acc: 0.9962 - val_loss: 0.0143 - val_acc: 0.9967
+Epoch 16/50
+47s - loss: 0.0112 - acc: 0.9967 - val_loss: 0.0130 - val_acc: 0.9975
+Epoch 17/50
+46s - loss: 0.0109 - acc: 0.9968 - val_loss: 0.0138 - val_acc: 0.9974
+Epoch 18/50
+45s - loss: 0.0098 - acc: 0.9971 - val_loss: 0.0135 - val_acc: 0.9974
+Epoch 19/50
+45s - loss: 0.0090 - acc: 0.9973 - val_loss: 0.0133 - val_acc: 0.9974
+Epoch 20/50
+45s - loss: 0.0090 - acc: 0.9972 - val_loss: 0.0139 - val_acc: 0.9978
+Epoch 21/50
+45s - loss: 0.0083 - acc: 0.9974 - val_loss: 0.0131 - val_acc: 0.9976
+Epoch 22/50
+45s - loss: 0.0074 - acc: 0.9979 - val_loss: 0.0141 - val_acc: 0.9978
+Epoch 23/50
+45s - loss: 0.0071 - acc: 0.9978 - val_loss: 0.0127 - val_acc: 0.9977
+Epoch 24/50
+45s - loss: 0.0076 - acc: 0.9975 - val_loss: 0.0145 - val_acc: 0.9978
+Epoch 25/50
+45s - loss: 0.0064 - acc: 0.9979 - val_loss: 0.0158 - val_acc: 0.9971
+Epoch 26/50
+45s - loss: 0.0059 - acc: 0.9980 - val_loss: 0.0141 - val_acc: 0.9980
+Epoch 27/50
+45s - loss: 0.0061 - acc: 0.9982 - val_loss: 0.0147 - val_acc: 0.9980
+Epoch 28/50
+44s - loss: 0.0054 - acc: 0.9984 - val_loss: 0.0152 - val_acc: 0.9976
+Epoch 29/50
+45s - loss: 0.0051 - acc: 0.9982 - val_loss: 0.0145 - val_acc: 0.9979
+Epoch 30/50
+45s - loss: 0.0051 - acc: 0.9983 - val_loss: 0.0134 - val_acc: 0.9980
+Epoch 31/50
+45s - loss: 0.0048 - acc: 0.9984 - val_loss: 0.0156 - val_acc: 0.9978
+Epoch 32/50
+44s - loss: 0.0046 - acc: 0.9983 - val_loss: 0.0158 - val_acc: 0.9978
+Epoch 00031: early stopping
+confusion matrix: 
+[[17964    18]
+ [   22   235]]
+accuracy score:  0.997806897308
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     17982
+          1       0.93      0.91      0.92       257
+
+avg / total       1.00      1.00      1.00     18239
+
+F1 score:  0.921568627451
+recall:  0.91439688716
+False positive rate:  0.001001001001
+********************  2 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.250000,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 17998, train nag num = 71992
+vali pos num = 234, vali nag num = 18004
+Remove file ./cache/models/cnn_model_3.h5.
+Train on 89990 samples, validate on 18238 samples
+Epoch 1/50
+46s - loss: 0.1863 - acc: 0.8804 - val_loss: 0.0365 - val_acc: 0.9887
+Epoch 2/50
+45s - loss: 0.1364 - acc: 0.9751 - val_loss: 0.0323 - val_acc: 0.9894
+Epoch 3/50
+45s - loss: 0.1011 - acc: 0.9780 - val_loss: 0.0305 - val_acc: 0.9890
+Epoch 4/50
+45s - loss: 0.0723 - acc: 0.9799 - val_loss: 0.0328 - val_acc: 0.9879
+Epoch 5/50
+48s - loss: 0.0625 - acc: 0.9820 - val_loss: 0.0240 - val_acc: 0.9920
+Epoch 6/50
+46s - loss: 0.0548 - acc: 0.9855 - val_loss: 0.0204 - val_acc: 0.9934
+Epoch 7/50
+46s - loss: 0.0501 - acc: 0.9871 - val_loss: 0.0192 - val_acc: 0.9941
+Epoch 8/50
+46s - loss: 0.0444 - acc: 0.9890 - val_loss: 0.0192 - val_acc: 0.9944
+Epoch 9/50
+46s - loss: 0.0416 - acc: 0.9903 - val_loss: 0.0178 - val_acc: 0.9949
+Epoch 10/50
+46s - loss: 0.0373 - acc: 0.9912 - val_loss: 0.0169 - val_acc: 0.9957
+Epoch 11/50
+46s - loss: 0.0352 - acc: 0.9922 - val_loss: 0.0131 - val_acc: 0.9965
+Epoch 12/50
+45s - loss: 0.0326 - acc: 0.9929 - val_loss: 0.0142 - val_acc: 0.9961
+Epoch 13/50
+46s - loss: 0.0314 - acc: 0.9937 - val_loss: 0.0133 - val_acc: 0.9964
+Epoch 14/50
+47s - loss: 0.0291 - acc: 0.9942 - val_loss: 0.0147 - val_acc: 0.9961
+Epoch 15/50
+48s - loss: 0.0286 - acc: 0.9944 - val_loss: 0.0123 - val_acc: 0.9967
+Epoch 16/50
+45s - loss: 0.0264 - acc: 0.9954 - val_loss: 0.0113 - val_acc: 0.9971
+Epoch 17/50
+46s - loss: 0.0256 - acc: 0.9954 - val_loss: 0.0098 - val_acc: 0.9976
+Epoch 18/50
+45s - loss: 0.0244 - acc: 0.9957 - val_loss: 0.0107 - val_acc: 0.9975
+Epoch 19/50
+46s - loss: 0.0227 - acc: 0.9961 - val_loss: 0.0102 - val_acc: 0.9976
+Epoch 20/50
+46s - loss: 0.0228 - acc: 0.9962 - val_loss: 0.0091 - val_acc: 0.9978
+Epoch 21/50
+45s - loss: 0.0210 - acc: 0.9967 - val_loss: 0.0105 - val_acc: 0.9976
+Epoch 22/50
+45s - loss: 0.0200 - acc: 0.9969 - val_loss: 0.0112 - val_acc: 0.9976
+Epoch 23/50
+45s - loss: 0.0199 - acc: 0.9972 - val_loss: 0.0091 - val_acc: 0.9980
+Epoch 24/50
+45s - loss: 0.0180 - acc: 0.9974 - val_loss: 0.0095 - val_acc: 0.9979
+Epoch 25/50
+45s - loss: 0.0173 - acc: 0.9975 - val_loss: 0.0096 - val_acc: 0.9977
+Epoch 26/50
+45s - loss: 0.0162 - acc: 0.9979 - val_loss: 0.0094 - val_acc: 0.9977
+Epoch 27/50
+45s - loss: 0.0158 - acc: 0.9981 - val_loss: 0.0094 - val_acc: 0.9981
+Epoch 28/50
+45s - loss: 0.0151 - acc: 0.9980 - val_loss: 0.0089 - val_acc: 0.9981
+Epoch 29/50
+45s - loss: 0.0150 - acc: 0.9981 - val_loss: 0.0089 - val_acc: 0.9982
+Epoch 30/50
+45s - loss: 0.0141 - acc: 0.9984 - val_loss: 0.0093 - val_acc: 0.9981
+Epoch 31/50
+45s - loss: 0.0137 - acc: 0.9984 - val_loss: 0.0097 - val_acc: 0.9979
+Epoch 32/50
+47s - loss: 0.0136 - acc: 0.9986 - val_loss: 0.0090 - val_acc: 0.9980
+Epoch 33/50
+45s - loss: 0.0131 - acc: 0.9985 - val_loss: 0.0090 - val_acc: 0.9982
+Epoch 34/50
+45s - loss: 0.0122 - acc: 0.9987 - val_loss: 0.0082 - val_acc: 0.9985
+Epoch 35/50
+45s - loss: 0.0113 - acc: 0.9988 - val_loss: 0.0087 - val_acc: 0.9985
+Epoch 36/50
+45s - loss: 0.0112 - acc: 0.9986 - val_loss: 0.0091 - val_acc: 0.9982
+Epoch 37/50
+45s - loss: 0.0109 - acc: 0.9989 - val_loss: 0.0098 - val_acc: 0.9983
+Epoch 38/50
+45s - loss: 0.0099 - acc: 0.9992 - val_loss: 0.0103 - val_acc: 0.9979
+Epoch 39/50
+45s - loss: 0.0102 - acc: 0.9991 - val_loss: 0.0088 - val_acc: 0.9985
+Epoch 40/50
+48s - loss: 0.0098 - acc: 0.9991 - val_loss: 0.0095 - val_acc: 0.9985
+Epoch 00039: early stopping
+confusion matrix: 
+[[17985    19]
+ [    9   225]]
+accuracy score:  0.998464743941
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     18004
+          1       0.92      0.96      0.94       234
+
+avg / total       1.00      1.00      1.00     18238
+
+F1 score:  0.941422594142
+recall:  0.961538461538
+False positive rate:  0.00105532103977
+********************  3 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 17993, train nag num = 71974
+vali pos num = 216, vali nag num = 18022
+Remove file ./cache/models/cnn_model_4.h5.
+Train on 89967 samples, validate on 18238 samples
+Epoch 1/50
+45s - loss: 0.1625 - acc: 0.9241 - val_loss: 0.0394 - val_acc: 0.9860
+Epoch 2/50
+44s - loss: 0.0945 - acc: 0.9560 - val_loss: 0.0311 - val_acc: 0.9897
+Epoch 3/50
+44s - loss: 0.0843 - acc: 0.9614 - val_loss: 0.0190 - val_acc: 0.9935
+Epoch 4/50
+44s - loss: 0.0748 - acc: 0.9682 - val_loss: 0.0220 - val_acc: 0.9916
+Epoch 5/50
+44s - loss: 0.0668 - acc: 0.9737 - val_loss: 0.0226 - val_acc: 0.9916
+Epoch 6/50
+44s - loss: 0.0588 - acc: 0.9723 - val_loss: 0.0163 - val_acc: 0.9939
+Epoch 7/50
+44s - loss: 0.0549 - acc: 0.9814 - val_loss: 0.0140 - val_acc: 0.9953
+Epoch 8/50
+44s - loss: 0.0502 - acc: 0.9838 - val_loss: 0.0150 - val_acc: 0.9942
+Epoch 9/50
+44s - loss: 0.0437 - acc: 0.9879 - val_loss: 0.0151 - val_acc: 0.9944
+Epoch 10/50
+44s - loss: 0.0384 - acc: 0.9908 - val_loss: 0.0149 - val_acc: 0.9945
+Epoch 11/50
+44s - loss: 0.0354 - acc: 0.9917 - val_loss: 0.0116 - val_acc: 0.9961
+Epoch 12/50
+44s - loss: 0.0316 - acc: 0.9931 - val_loss: 0.0095 - val_acc: 0.9969
+Epoch 13/50
+44s - loss: 0.0311 - acc: 0.9933 - val_loss: 0.0108 - val_acc: 0.9964
+Epoch 14/50
+44s - loss: 0.0285 - acc: 0.9946 - val_loss: 0.0107 - val_acc: 0.9963
+Epoch 15/50
+44s - loss: 0.0261 - acc: 0.9954 - val_loss: 0.0120 - val_acc: 0.9961
+Epoch 16/50
+44s - loss: 0.0254 - acc: 0.9952 - val_loss: 0.0112 - val_acc: 0.9965
+Epoch 17/50
+44s - loss: 0.0246 - acc: 0.9959 - val_loss: 0.0078 - val_acc: 0.9975
+Epoch 18/50
+44s - loss: 0.0229 - acc: 0.9963 - val_loss: 0.0092 - val_acc: 0.9970
+Epoch 19/50
+44s - loss: 0.0233 - acc: 0.9960 - val_loss: 0.0076 - val_acc: 0.9975
+Epoch 20/50
+44s - loss: 0.0224 - acc: 0.9965 - val_loss: 0.0085 - val_acc: 0.9975
+Epoch 21/50
+44s - loss: 0.0205 - acc: 0.9970 - val_loss: 0.0075 - val_acc: 0.9979
+Epoch 22/50
+44s - loss: 0.0191 - acc: 0.9975 - val_loss: 0.0077 - val_acc: 0.9976
+Epoch 23/50
+44s - loss: 0.0186 - acc: 0.9973 - val_loss: 0.0073 - val_acc: 0.9976
+Epoch 24/50
+44s - loss: 0.0188 - acc: 0.9974 - val_loss: 0.0067 - val_acc: 0.9977
+Epoch 25/50
+44s - loss: 0.0173 - acc: 0.9977 - val_loss: 0.0077 - val_acc: 0.9979
+Epoch 26/50
+44s - loss: 0.0160 - acc: 0.9979 - val_loss: 0.0062 - val_acc: 0.9980
+Epoch 27/50
+44s - loss: 0.0161 - acc: 0.9979 - val_loss: 0.0096 - val_acc: 0.9971
+Epoch 28/50
+44s - loss: 0.0159 - acc: 0.9980 - val_loss: 0.0065 - val_acc: 0.9979
+Epoch 29/50
+44s - loss: 0.0155 - acc: 0.9979 - val_loss: 0.0079 - val_acc: 0.9976
+Epoch 30/50
+44s - loss: 0.0152 - acc: 0.9980 - val_loss: 0.0065 - val_acc: 0.9981
+Epoch 31/50
+44s - loss: 0.0141 - acc: 0.9984 - val_loss: 0.0067 - val_acc: 0.9981
+Epoch 32/50
+44s - loss: 0.0137 - acc: 0.9984 - val_loss: 0.0080 - val_acc: 0.9977
+Epoch 33/50
+44s - loss: 0.0131 - acc: 0.9985 - val_loss: 0.0073 - val_acc: 0.9980
+Epoch 34/50
+43s - loss: 0.0128 - acc: 0.9987 - val_loss: 0.0069 - val_acc: 0.9979
+Epoch 35/50
+44s - loss: 0.0127 - acc: 0.9984 - val_loss: 0.0085 - val_acc: 0.9977
+Epoch 36/50
+44s - loss: 0.0122 - acc: 0.9985 - val_loss: 0.0066 - val_acc: 0.9981
+Epoch 00035: early stopping
+confusion matrix: 
+[[17998    24]
+ [   11   205]]
+accuracy score:  0.998080929927
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     18022
+          1       0.90      0.95      0.92       216
+
+avg / total       1.00      1.00      1.00     18238
+
+F1 score:  0.921348314607
+recall:  0.949074074074
+False positive rate:  0.00133170569304
+********************  4 fold end  ********************
+begin to over_sampling ......
+end over_sampling, pos/nag=0.249993,pos_nag_rato=0.250000
+train_model in MedlatModel ......
+train pos num = 18000, train nag num = 72002
+vali pos num = 244, vali nag num = 17994
+Remove file ./cache/models/cnn_model_5.h5.
+Train on 90002 samples, validate on 18238 samples
+Epoch 1/50
+44s - loss: 0.6478 - acc: 0.5196 - val_loss: 0.6890 - val_acc: 0.9636
+Epoch 2/50
+44s - loss: 0.5786 - acc: 0.8624 - val_loss: 0.6698 - val_acc: 0.9780
+Epoch 3/50
+44s - loss: 0.5562 - acc: 0.9497 - val_loss: 0.6430 - val_acc: 0.9906
+Epoch 4/50
+44s - loss: 0.4613 - acc: 0.9522 - val_loss: 0.1056 - val_acc: 0.9887
+Epoch 5/50
+44s - loss: 0.1731 - acc: 0.9740 - val_loss: 0.0443 - val_acc: 0.9917
+Epoch 6/50
+44s - loss: 0.1414 - acc: 0.9789 - val_loss: 0.0327 - val_acc: 0.9914
+Epoch 7/50
+44s - loss: 0.1154 - acc: 0.9835 - val_loss: 0.0268 - val_acc: 0.9926
+Epoch 8/50
+44s - loss: 0.1093 - acc: 0.9869 - val_loss: 0.0213 - val_acc: 0.9941
+Epoch 9/50
+44s - loss: 0.1052 - acc: 0.9885 - val_loss: 0.0179 - val_acc: 0.9946
+Epoch 10/50
+44s - loss: 0.0998 - acc: 0.9900 - val_loss: 0.0186 - val_acc: 0.9948
+Epoch 11/50
+44s - loss: 0.0969 - acc: 0.9910 - val_loss: 0.0189 - val_acc: 0.9942
+Epoch 12/50
+44s - loss: 0.0947 - acc: 0.9916 - val_loss: 0.0159 - val_acc: 0.9950
+Epoch 13/50
+44s - loss: 0.0913 - acc: 0.9925 - val_loss: 0.0185 - val_acc: 0.9941
+Epoch 14/50
+44s - loss: 0.0893 - acc: 0.9927 - val_loss: 0.0147 - val_acc: 0.9954
+Epoch 15/50
+44s - loss: 0.0876 - acc: 0.9933 - val_loss: 0.0117 - val_acc: 0.9966
+Epoch 16/50
+44s - loss: 0.0848 - acc: 0.9942 - val_loss: 0.0116 - val_acc: 0.9964
+Epoch 17/50
+44s - loss: 0.0830 - acc: 0.9940 - val_loss: 0.0115 - val_acc: 0.9966
+Epoch 18/50
+44s - loss: 0.0809 - acc: 0.9948 - val_loss: 0.0103 - val_acc: 0.9972
+Epoch 19/50
+44s - loss: 0.0792 - acc: 0.9955 - val_loss: 0.0098 - val_acc: 0.9971
+Epoch 20/50
+44s - loss: 0.0762 - acc: 0.9956 - val_loss: 0.0094 - val_acc: 0.9970
+Epoch 21/50
+44s - loss: 0.0745 - acc: 0.9963 - val_loss: 0.0098 - val_acc: 0.9967
+Epoch 22/50
+44s - loss: 0.0737 - acc: 0.9962 - val_loss: 0.0086 - val_acc: 0.9974
+Epoch 23/50
+44s - loss: 0.0718 - acc: 0.9965 - val_loss: 0.0099 - val_acc: 0.9971
+Epoch 24/50
+44s - loss: 0.0714 - acc: 0.9966 - val_loss: 0.0101 - val_acc: 0.9970
+Epoch 25/50
+44s - loss: 0.0692 - acc: 0.9969 - val_loss: 0.0080 - val_acc: 0.9976
+Epoch 26/50
+44s - loss: 0.0678 - acc: 0.9969 - val_loss: 0.0087 - val_acc: 0.9974
+Epoch 27/50
+44s - loss: 0.0656 - acc: 0.9972 - val_loss: 0.0084 - val_acc: 0.9975
+Epoch 28/50
+44s - loss: 0.0651 - acc: 0.9973 - val_loss: 0.0091 - val_acc: 0.9973
+Epoch 29/50
+44s - loss: 0.0618 - acc: 0.9974 - val_loss: 0.0079 - val_acc: 0.9978
+Epoch 30/50
+44s - loss: 0.0606 - acc: 0.9976 - val_loss: 0.0093 - val_acc: 0.9974
+Epoch 31/50
+44s - loss: 0.0602 - acc: 0.9977 - val_loss: 0.0076 - val_acc: 0.9975
+Epoch 32/50
+44s - loss: 0.0572 - acc: 0.9977 - val_loss: 0.0094 - val_acc: 0.9975
+Epoch 33/50
+44s - loss: 0.0561 - acc: 0.9980 - val_loss: 0.0095 - val_acc: 0.9971
+Epoch 34/50
+44s - loss: 0.0549 - acc: 0.9979 - val_loss: 0.0112 - val_acc: 0.9968
+Epoch 35/50
+44s - loss: 0.0543 - acc: 0.9980 - val_loss: 0.0081 - val_acc: 0.9978
+Epoch 00034: early stopping
+confusion matrix: 
+[[17967    27]
+ [   14   230]]
+accuracy score:  0.997751946485
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     17994
+          1       0.89      0.94      0.92       244
+
+avg / total       1.00      1.00      1.00     18238
+
+F1 score:  0.918163672655
+recall:  0.94262295082
+False positive rate:  0.00150050016672
+********************  5 fold end  ********************
+./cache/evaluate.csv had saved. Please download it.
+confusion matrix: 
+[[89879   117]
+ [   77  1119]]
+accuracy score:  0.997872620405
+classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00     89996
+          1       0.91      0.94      0.92      1196
+
+avg / total       1.00      1.00      1.00     91192
+
+F1 score:  0.920230263158
+recall:  0.935618729097
+False positive rate:  0.00130005778035
